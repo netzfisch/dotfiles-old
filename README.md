@@ -1,31 +1,33 @@
-thoughtbot dotfiles
-===================
+netzfisch does also dotfiles
+============================
 
-Requirements
-------------
+These dotfiles personalize my system, but feel free to fork them. Originally I cloned them from [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles), who focus mainly at ruby development with tools like vim, tmux and git. But meanwhile I customised for my needs to use with ubuntu/[lubuntu](http://lubuntu.net) and integrate with Ethan Schoonover [solarized-theme](https://github.com/altercation/solarized) for Xfce4-Terminal and [VIM](http://vim.org).
 
-Set zsh as your login shell.
+Differently from thoughtbot I track my customisations (files with .local-extension) also in git. That way **ALL my configurations are tracked** and I keep easily up with the orginal fork by doing:
 
-    chsh -s /bin/zsh
+    git remote add upstream git@github.com:thoughtbot/dotfiles.git
+    git fetch upstream
+    git rebase upstream/master
+
+See the unofficial guide to [dotfiles on GitHub](http://dotfiles.github.io/) and why you want to track down you dotfiels and to get started with a bootstrap!
 
 Install
 -------
 
-Clone onto your laptop:
+Set zsh as your login shell:
 
-    git clone git://github.com/thoughtbot/dotfiles.git
+    chsh -s /bin/zsh
 
-(Or, [fork and keep your fork
-updated](http://robots.thoughtbot.com/keeping-a-github-fork-updated)).
+Fork or clone onto your box:
 
-Install:
+    git clone git://github.com/netzfisch/dotfiles.git
+
+Than install:
 
     cd dotfiles
     ./install.sh
 
 This will create symlinks for config files in your home directory.
-
-You can safely run `./install.sh` multiple times to update.
 
 Make your own customizations
 ----------------------------
@@ -39,34 +41,6 @@ Put your customizations in dotfiles appended with `.local`:
 * `~/.vimrc.local`
 * `~/.vimrc.bundles.local`
 * `~/.zshrc.local`
-
-For example, your `~/.aliases.local` might look like this:
-
-    # Productivity
-    alias todo='$EDITOR ~/.todo'
-
-Your `~/.gitconfig.local` might look like this:
-
-    [alias]
-      l = log --pretty=colored
-    [pretty]
-      colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
-    [user]
-      name = Dan Croak
-      email = dan@thoughtbot.com
-
-Your `~/.zshrc.local` might look like this:
-
-    # load rbenv
-    eval "$(rbenv init -)"
-
-    # recommended by brew doctor
-    export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-
-Your `~/.vimrc.bundles.local` might look like this:
-
-    Bundle 'Lokaltog/vim-powerline'
-    Bundle 'stephenmckinney/vim-solarized-powerline'
 
 What's in it?
 -------------
@@ -122,15 +96,6 @@ Shell aliases and scripts:
 Credits
 -------
 
-Thank you, [contributors](https://github.com/thoughtbot/dotfiles/contributors)!
-Also, thank you to Corey Haines, Gary Bernhardt, and others for sharing your
-dotfiles and other shell scripts from which we derived inspiration for items
-in this project.
+Thanks to [thoughtbot](http://thoughtbot.com/) and the contributors.
 
-![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
-
-Dotfiles is maintained by [thoughtbot, inc](http://thoughtbot.com/community)
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
-
-Dotfiles is © 2009-2013 thoughtbot, inc. It is free software and may be
-redistributed under the terms specified in the [LICENSE](LICENSE) file.
+These dotfiles are free software and may be redistributed under the terms specified in the [LICENSE](LICENSE) file.
