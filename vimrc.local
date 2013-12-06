@@ -1,5 +1,10 @@
 " Color scheme
 let g:solarized_termcolors=256
+"let g:solarized_contrast="high"
+"let g:solarized_visibility="high"
 set background=light
-"call togglebg#map("<F5>")
 colorscheme solarized
+call togglebg#map("<F5>")
+
+" Enable mouse usage (all modes)
+set mouse=a
