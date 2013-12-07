@@ -1,6 +1,9 @@
-# Source login shell configuration, especially for colors and prompt
-source ~/.zlogin
-
+# Now done via acitviation of 'Run command as login shell' in the
+# gui-terminal configuration: [Edit]>[Preferences]>[Command]!
+# ------------------------------------------------------------
+## Source login shell configuration, especially for colors and prompt
+#source ~/.zlogin
+ 
 # Turn on 256 color support for xterm-based ...
 if [ "x$TERM" = "xxterm" ]
 then
