@@ -3,6 +3,8 @@ netzfisch does also dotfiles
 
 These dotfiles personalize my system, but feel free to fork them. Originally I cloned them from [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles), who focus mainly at ruby development with tools like vim, tmux and git. But meanwhile I customised for my needs to use with ubuntu/[lubuntu](http://lubuntu.net) and integrate with Ethan Schoonover [solarized-theme](https://github.com/altercation/solarized) for Xfce4-Terminal and [VIM](http://vim.org).
 
+**Heads-up**: If you run into trouble concerning **terminal colors**, check this excellent  [post](http://push.cx/2008/256-color-xterms-in-ubuntu) for a general overview - how things suppose to work!
+
 Differently from thoughtbot I track my customisations (files with .local-extension) also in git. That way **ALL my configurations are tracked** and I keep easily up with the orginal fork by doing:
 
     git remote add upstream git@github.com:thoughtbot/dotfiles.git
