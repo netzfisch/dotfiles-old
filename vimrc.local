@@ -8,3 +8,7 @@ call togglebg#map("<F5>")
 
 " Enable mouse usage (all modes)
 set mouse=a
+
+" Set custom rspec command to use
+" pre-loader spring in vim-rspec
+let g:rspec_command = "!spring rspec {spec}"
