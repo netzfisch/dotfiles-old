@@ -3,7 +3,7 @@
 # ------------------------------------------------------------
 ## Source login shell configuration, especially for colors and prompt
 #source ~/.zlogin
- 
+
 # Turn on 256 color support for xterm-based ...
 if [ "x$TERM" = "xxterm" ]
 then
@@ -12,3 +12,9 @@ fi
 
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
+
+# Add nodejs to PATH for local installs
+PATH=$HOME/.node/bin:$PATH
+
+# Add Android SDK to PATH for local builds
+PATH=${PATH}:$HOME/Development/android-sdk/platform-tools:$HOME/Development/android-sdk/tools
