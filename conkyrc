@@ -18,7 +18,7 @@ maximum_width 268
 own_window yes
 own_window_type normal # other options are: dock/override/normal/desktop/panel
 own_window_transparent yes
-own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+own_window_hints undecorate,sticky #,skip_taskbar,skip_pager,below
 border_inner_margin 0
 border_outer_margin 0
 alignment top_right
