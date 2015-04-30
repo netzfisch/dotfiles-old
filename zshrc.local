@@ -11,7 +11,7 @@ then
 fi
 
 # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
+# PATH=$PATH:$HOME/.rvm/bin
 
 # Add nodejs to PATH for local installs
 PATH=$HOME/.node/bin:$PATH
